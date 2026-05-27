@@ -1,4 +1,4 @@
-# 🐍 Python Data Science Basics
+# Python Data Science Basics
 
 A beginner-friendly repository covering **NumPy**, **Pandas**, and **Matplotlib** with practical examples.
 
