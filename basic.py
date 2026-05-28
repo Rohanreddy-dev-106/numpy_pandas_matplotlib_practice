@@ -148,7 +148,7 @@ print("----------")
 #Slicing returns a view, not a copy mean if we change in sliced array it effect orginal array  they  both share same memory
 x = np.array([10, 20, 30, 40, 50])
 x[2] = 99
-print(a)
+print(x)
 x[1:4] = 0
 print(x)
 y = np.array([
