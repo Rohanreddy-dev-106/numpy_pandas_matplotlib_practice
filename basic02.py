@@ -41,7 +41,7 @@ print(a[[0, 2], [1, 2]])
 
 #boolean indexing
 bool_index=np.random.randint(1,100,9).reshape(3,3)
-print(bool_index[bool_index > 50 ])
+print(bool_index[bool_index > 50 ],"kc")
 print(bool_index[bool_index%2==0])
 print(bool_index[(bool_index%2==0 ) & (bool_index > 30)]) #array[conduction]
 
@@ -60,6 +60,10 @@ def sigmoid(array): #range from (0,1)
 x=np.arange(10)
 
 print(sigmoid(x))
+print("________________")
+def mse(a,p):
+    return np.mean((a-p)**2)
+print(mse(x,np.mean(x)),"MSE")
 
 #working with nan
 
