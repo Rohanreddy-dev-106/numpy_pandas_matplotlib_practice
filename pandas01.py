@@ -1,5 +1,6 @@
 import numpy as np
 import  pandas as pd
+from matplotlib import pyplot as plt
 
 #normal series
 names=["rohan","sai", "reddy"]
@@ -40,7 +41,7 @@ print(dataM.index)
 print(dataM.values)
 print("-----------------")
 
-csv=pd.read_csv("Datasets/subs.csv")
+csv=pd.read_csv("Datasets/subs.csv",index_col="Subscribers gained")
 df= csv.squeeze() #converts  a dataframe to series
 print(df)
 
@@ -55,3 +56,20 @@ print()
 print(series.sample(2))
 print()
 print(series.value_counts())# frequency count
+print()
+print(series.count())
+print()
+# print(series.sum())
+# print(series.product())
+print()
+# print(df.mean())#median mode std var
+# print(series.mode())
+print()
+print(series.describe())
+
+# series.value_counts().plot(kind="pie")
+# plt.show()
+print("_____________________")
+#indexing in  series using iloc[position] for slicing also same
+series.iloc[0]
+series.iloc[-1]
